@@ -2,5 +2,6 @@
     <string name="app_name">Kati</string>
 
     <!-- Login Fragment -->
-    <string name="app_title">Enjoy Learning Chinese</string>
+    <string name="app_description">Enjoy Learning Chinese</string>
+    <string name="google_login">Google Login</string>
 </resources>
