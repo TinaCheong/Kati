@@ -8,8 +8,10 @@ import android.view.ViewGroup;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
+import androidx.fragment.app.FragmentTransaction;
 
 import com.tina.kati.R;
+import com.tina.kati.wordcard.WordCardFragment;
 
 public class LoginFragment extends Fragment {
 
@@ -17,7 +19,17 @@ public class LoginFragment extends Fragment {
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
 
-        View root = inflater.inflate(R.layout.fragment_login, container, false);
+        View root = inflater.inflate(R.layout.activity_login, container, false);
+
+        root.findViewById(R.id.google_login_button).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                FragmentTransaction transaction = getFragmentManager().beginTransaction();
+                transaction.replace(R.id.login_fragment_container, new LoginFragment()).commit();
+                transaction.add(R.id.login_fragment_container, new WordCardFragment()).commit();
+
+            }
+        });
 
         return root;
     }

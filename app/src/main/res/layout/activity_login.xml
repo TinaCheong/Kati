@@ -13,17 +13,19 @@
         android:id="@+id/app_icon"
         android:layout_width="195dp"
         android:layout_height="208dp"
-        android:layout_marginTop="200dp"
+        android:layout_marginTop="150dp"
+        android:elevation="4dp"
+        android:translationZ="10dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/ic_app" />
+        android:src="@drawable/ic_app" />
 
     <TextView
         android:id="@+id/app_description"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="190dp"
+        android:layout_marginTop="200dp"
         android:text="@string/app_description"
         android:textColor="@color/yellow_ffcc00"
         android:textSize="24sp"
@@ -43,11 +45,23 @@
         android:gravity="center"
         android:text="@string/google_login"
         android:textAllCaps="false"
-        android:textColor="@color/white_CC"
+        android:textColor="@color/white"
         android:textSize="24sp"
         android:textStyle="bold"
+        android:elevation="4dp"
+        android:translationZ="10dp"
+        android:stateListAnimator="@null"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/app_description" />
+
+    <FrameLayout
+        android:id="@+id/login_fragment_container"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 </androidx.constraintlayout.widget.ConstraintLayout>
