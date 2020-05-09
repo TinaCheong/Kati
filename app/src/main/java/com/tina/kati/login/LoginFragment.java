@@ -19,13 +19,13 @@ public class LoginFragment extends Fragment {
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
 
-        View root = inflater.inflate(R.layout.activity_login, container, false);
+        View root = inflater.inflate(R.layout.fragment_login, container, false);
 
         root.findViewById(R.id.google_login_button).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                requireActivity().finish();
                 FragmentTransaction transaction = getFragmentManager().beginTransaction();
-                transaction.replace(R.id.login_fragment_container, new LoginFragment()).commit();
                 transaction.add(R.id.login_fragment_container, new WordCardFragment()).commit();
 
             }
