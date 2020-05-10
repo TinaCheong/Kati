@@ -2,5 +2,11 @@
     <string name="app_name">Kati</string>
 
     <!-- Login Fragment -->
-    <string name="app_title">Enjoy Learning Chinese</string>
+    <string name="app_description">Enjoy Learning Chinese</string>
+    <string name="google_login">Google Login</string>
+
+    <!-- Bottom Navigation -->
+    <string name="word_card_text">字卡</string>
+    <string name="collection">怪獸圖鑑</string>
+    <string name="profile">個人</string>
 </resources>
