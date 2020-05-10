@@ -26,7 +26,11 @@
             android:textSize="26sp"
             android:textStyle="bold"
             android:layout_gravity="center"
-            android:text="二年級" />
+            android:text="二年級"
+            android:shadowColor="@color/black_3f3a3a"
+            android:shadowRadius="1"
+            android:shadowDx="1"
+            android:shadowDy="1"/>
 
         <ImageView
             android:id="@+id/change_levels_title"
@@ -51,7 +55,8 @@
         app:labelVisibilityMode="labeled"
         app:itemTextColor="@drawable/bottom_navigation_item_selector"
         app:itemIconTint="@drawable/bottom_navigation_item_selector"
-        app:itemIconSize="24dp"
+        app:itemIconSize="26dp"
+        android:outlineSpotShadowColor="@color/black_3f3a3a"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"

@@ -25,9 +25,6 @@ public class LoginFragment extends Fragment {
             @Override
             public void onClick(View v) {
                 requireActivity().finish();
-                FragmentTransaction transaction = getFragmentManager().beginTransaction();
-                transaction.add(R.id.login_fragment_container, new WordCardFragment()).commit();
-
             }
         });
 
